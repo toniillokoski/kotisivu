@@ -38,3 +38,54 @@
     }
   }
 }
+
+.social-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.allcontact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2.4rem;
+}
+
+.feedback-input {
+  color: #eeeded;
+  font-weight:500;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #176f8f;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+@media screen and (max-width: 900px) {
+  #info {
+      width: 80vw;
+      margin-left: 1vw;
+      margin-right: 1vw;
+  }
+}
+
+.feedback-input:focus {
+  border:2px solid #00bbff;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+button {
+  background: transparent;
+}
