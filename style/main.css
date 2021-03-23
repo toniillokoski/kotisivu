@@ -209,7 +209,7 @@ a:hover {
 .footer {
   background-color: #333333;
   color: #fff;
-  padding: 4.8rem 0;
+  padding: 1rem 0;
 }
 
 @media (max-width: 37.5em) {
@@ -540,17 +540,35 @@ section {
   color: #fff;
 }
 
+@media (max-width: 75em) {
+  #contact {
+    padding: 10rem 0;
+    clip-path: none;
+    margin-top: 0;
+    -webkit-clip-path: none;
+  }
+}
+
 .contact-wrapper {
   margin: 0 auto;
-  padding-top: 3rem;
   position: relative;
   max-width: 900px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* Begin Left Contact Page */
 .form-horizontal {
   max-width: 450px;
   display: inline-block;
+  font-size: 1.6rem;
 }
 
 .form-control, textarea {
@@ -571,6 +589,7 @@ section {
   background: transparent;
   color: #fff;
   border: 2px solid #fff;
+  text-decoration: none;
 }
 
 .send-button::after {
@@ -580,6 +599,9 @@ section {
 .send-button:hover {
   color: #00cdac;
   text-decoration: none;
+  background: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .send-button:hover::after {
@@ -590,7 +612,6 @@ section {
 .direct-contact-container {
   max-width: 450px;
   float: right;
-  margin-top: 5px;
 }
 
 /* Location, Phone, Email Section */
