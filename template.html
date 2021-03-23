@@ -14,7 +14,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="./style/main.css">
   </head>
@@ -195,52 +194,6 @@
     </section>
     <!-- /END Projects Section -->
 
-    <!-- **** Contact Section **** -->
-    <!-- <section id="contact">
-      <div class="container">
-        <h2 class="section-title">
-          Contact
-        </h2>
-        
-				<div class="allcontact contact-wrapper">
-            <form
-            action="https://formspree.io/f/myybvnnw"
-            method="POST"
-            >
-            <label>
-              Email:
-              <input type="text" name="_replyto" class="feedback-input">
-            </label>
-
-            <label>
-              Message:
-              <textarea name="message" class="feedback-input"></textarea>
-            </label>
-
-            <span class="d-flex mt-3">
-              <button type="submit" target="_blank" class="cta-btn cta-btn--resume" href="#!">Send</button>
-            </span>
-            </form>
-
-				<div class="orelse">
-					OR
-				</div>
-
-				<div class="othercontact">
-					<div class="phone">
-            <i class="fa fa-phone" aria-hidden="true"></i>
-						040&nbsp; 718&nbsp; 4411
-					</div>
-					<br>
-					<div class="mail">
-            <i class="fa fa-envelope" aria-hidden="true"></i>
-            contact@toniillokoski.com
-          </div>
-					</div>
-      </div>
-      </div>
-    </section> -->
-
     <section id="contact">
   
       <h2 class="section-title">
@@ -248,19 +201,22 @@
       </h2>      
       <div class="contact-wrapper">
         
-        <form id="contact-form" class="form-horizontal" role="form">
+        <form id="contact-form" class="form-horizontal" 
+        action="https://formspree.io/f/myybvnnw"
+        method="POST"
+        >
            
           <div class="form-group">
-              <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+              <input type="text" class="form-control" id="name" placeholder="Name" name="name" value="" required>
           </div>
     
           <div class="form-group">
-              <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+              <input type="email" class="form-control" id="email" placeholder="Email" name="_replyto" value="" required>
           </div>
     
-          <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+          <textarea class="form-control" rows="6" placeholder="Message" name="message" required></textarea>
           
-          <button class="btn btn-primary send-button" id="submit" type="submit">
+          <button class="btn btn-primary send-button cta-btn cta-btn--resume" id="submit" type="submit">
             SEND  
           </button>
           
@@ -307,7 +263,7 @@
                 <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
               </li>
               <li><a href="#" target="_blank" class="contact-icon">
-                <i class="fa fa-file-download fa-2x" aria-hidden="true">cv</i></a>
+                <i class="fa fa-file-download fa-2x" aria-hidden="true">CV</i></a>
               </li>
             </ul>
             <hr>    
