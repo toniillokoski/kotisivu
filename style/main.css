@@ -23,6 +23,7 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -884,12 +885,48 @@ hr {
   transition: 0.5s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.5s box-shadow, 0.5s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
 }
 
+@media (min-width: 112.5em) {
+  #projects .project-wrapper__image .thumbnail {
+    height: 320px;
+    width: 640px;
+  }
+}
+
+@media (max-width: 75em) {
+  #projects .project-wrapper__image .thumbnail {
+    height: 288px;
+    width: 576px;
+  }
+}
+
+@media (max-width: 56.25em) {
+  #projects .project-wrapper__image .thumbnail {
+    height: 256px;
+    width: 512px;
+  }
+}
+
+@media (max-width: 48em) {
+  #projects .project-wrapper__image .thumbnail {
+    height: 320px -96px;
+    width: 448px;
+  }
+}
+
 @media (max-width: 37.5em) {
   #projects .project-wrapper__image .thumbnail {
     border: 1px solid #d2d2d2;
     -webkit-box-shadow: none;
             box-shadow: none;
     margin-bottom: 3.2rem;
+    height: 320px -128px;
+    width: 640px -256px;
+  }
+}
+
+@media (max-width: 20em) {
+  #projects .project-wrapper__image .thumbnail {
+    width: 90vw;
   }
 }
 
@@ -897,7 +934,6 @@ hr {
   background-image: url(../../assets/tankkauslogi.png);
   background-size: 100% 100%;
   background-position: center;
-  /* Center the image */
   background-repeat: no-repeat;
 }
 
