@@ -430,7 +430,6 @@ section {
   -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
   padding: 15rem 0 10rem 0;
-  color: #fff;
   font-size: 1.3rem;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
@@ -443,6 +442,10 @@ section {
     margin-top: 0;
     -webkit-clip-path: none;
   }
+}
+
+.section-title {
+  color: #fff;
 }
 
 .contact-wrapper {
@@ -468,6 +471,10 @@ section {
 }
 
 input, textarea {
+  color: #272341;
+}
+
+input:focus, textarea:focus {
   color: #272341;
 }
 
@@ -519,9 +526,7 @@ input, textarea {
 /* Location, Phone, Email Section */
 .contact-list {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -536,13 +541,42 @@ input, textarea {
 }
 
 .list-item {
-  line-height: 4;
+  line-height: 3;
   color: #fff;
+  text-align: left;
+  vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list-item .iconn {
+  vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contact-text {
   color: #fff;
   font-size: 2rem;
+  letter-spacing: 1px;
+  margin-left: 5px;
+  vertical-align: middle;
+  margin-left: 20px;
 }
 
 .contact-text a {
@@ -571,10 +605,6 @@ input, textarea {
   color: #fff;
 }
 
-.contact-text {
-  margin-left: 5px;
-}
-
 .social-media-list li {
   position: relative;
   display: inline-block;
@@ -588,28 +618,13 @@ input, textarea {
   cursor: pointer;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
+  text-align: center;
 }
 
 .social-media-list li i {
   margin-top: -5px;
   position: relative;
   vertical-align: middle;
-}
-
-.social-media-list li:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  border-radius: 50%;
-  opacity: 0;
-  -webkit-box-shadow: 0 0 0 1px #fff;
-          box-shadow: 0 0 0 1px #fff;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
 }
 
 .social-media-list li:hover {

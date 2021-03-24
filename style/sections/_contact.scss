@@ -16,7 +16,7 @@
   -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
   padding: 15rem 0 10rem 0;
-  color: $white-color;
+  //color: $white-color;
   font-size: $smaller-font-size;
   font-family: 'Montserrat', sans-serif;
   font-size: $default-font-size;
@@ -27,6 +27,10 @@
     margin-top: 0;
     -webkit-clip-path: none;
   }
+}
+
+.section-title {
+  color: $white-color;
 }
 
 .contact-wrapper {
@@ -48,6 +52,10 @@
 
 input, textarea {
   color: $dark-blue-text;
+
+  &:focus{
+    color: $dark-blue-text;
+  }
 }
 
 .form-control, textarea {
@@ -100,7 +108,7 @@ input, textarea {
 /* Location, Phone, Email Section */
 .contact-list {
   list-style: none;
-  display: flex;
+  display: inline-block;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -108,13 +116,30 @@ input, textarea {
 }
 
 .list-item {
-  line-height: 4;
+  line-height: 3;
   color: $white-color;
+  text-align: left;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .iconn {
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .contact-text {
   color: $white-color;
   font-size: 2rem;
+  letter-spacing: 1px;
+  margin-left: 5px;
+  vertical-align: middle;
+  margin-left: 20px;
+
 }
 
 .contact-text a {
@@ -143,10 +168,6 @@ input, textarea {
   color: #fff;
 }
 
-.contact-text {
-  margin-left: 5px;
-}
-
 .social-media-list li {
   position: relative; 
   display: inline-block;
@@ -159,26 +180,13 @@ input, textarea {
   background-color: rgb(27,27,27);
   cursor: pointer; 
   transition: all .2s ease-in-out;
+  text-align: center;
 
   i {
     margin-top: -5px;
     position: relative;
     vertical-align: middle;
   }
-}
-
-.social-media-list li:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  border-radius: 50%;
-  opacity: 0;
-  box-shadow: 0 0 0 1px #fff;
-  transition: all .2s ease-in-out;
 }
 
 .social-media-list li:hover {
