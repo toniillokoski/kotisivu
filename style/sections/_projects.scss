@@ -60,6 +60,8 @@
 
       & .thumbnail {
         border: none;
+        height: 320px;
+        width: 640px;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
         transition: all 0.2s ease-out;
         box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
@@ -77,6 +79,32 @@
   }
 }
 
-.img-fluid {
-  max-height: 300px;
+.thumb1 {
+  background-image: url(../../assets/tankkauslogi.png);
+  background-size: 100% 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+}
+
+.thumb2 {
+  background-image: url(../../assets/spotify.png);
+  background-size: 100% 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+.thumb3 {
+  background-color: rgb(37, 37, 37);
+  background-image: url(../../assets/weather.png);
+  background-size: 80% 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+.thumb4 {
+  background-color: rgb(37, 37, 37);
+  background-image: url(../../assets/burgerclicker.png);
+  background-size: 35% 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
 }
