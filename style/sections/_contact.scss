@@ -46,6 +46,10 @@
 
 }
 
+input, textarea {
+  color: $dark-blue-text;
+}
+
 .form-control, textarea {
   max-width: 450px;
   width: 400px;
