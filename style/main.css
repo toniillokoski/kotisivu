@@ -12,6 +12,7 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
 
 */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 .mb-8 {
   margin-bottom: 8rem !important;
 }
@@ -428,6 +429,8 @@ section {
   padding: 15rem 0 10rem 0;
   color: #fff;
   font-size: 1.3rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
 }
 
 @media (max-width: 75em) {
@@ -468,6 +471,12 @@ section {
   color: #fff;
   border-radius: 0;
   font-size: 1.6rem;
+}
+
+.form-control:focus, textarea:focus {
+  border-color: black;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .send-button {
@@ -526,6 +535,7 @@ section {
 
 .contact-text {
   color: #fff;
+  font-size: 2rem;
 }
 
 .contact-text a {
@@ -877,5 +887,9 @@ hr {
             box-shadow: none;
     margin-bottom: 3.2rem;
   }
+}
+
+.img-fluid {
+  max-height: 300px;
 }
 /*# sourceMappingURL=main.css.map */

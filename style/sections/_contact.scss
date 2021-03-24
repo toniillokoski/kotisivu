@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+
 * {
   padding: 0;
   margin: 0;
@@ -15,6 +18,8 @@
   padding: 15rem 0 10rem 0;
   color: $white-color;
   font-size: $smaller-font-size;
+  font-family: 'Montserrat', sans-serif;
+  font-size: $default-font-size;
 
   @include respond(tab-land) {
     padding: 10rem 0;
@@ -48,6 +53,12 @@
   color: #fff;
   border-radius: 0;
   font-size: $default-font-size;
+
+  &:focus {
+    border-color: black;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
 }
 
 .send-button {
@@ -99,6 +110,7 @@
 
 .contact-text {
   color: $white-color;
+  font-size: 2rem;
 }
 
 .contact-text a {
