@@ -1068,8 +1068,16 @@ hr {
           flex-direction: column;
 }
 
+.wow .skills_text {
+  text-align: center;
+  margin: 0px;
+  margin-bottom: 8rem;
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .wow .skills-container {
-  width: 200rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1087,6 +1095,19 @@ hr {
 
 .wow .skills-container .Front, .wow .skills-container .Back, .wow .skills-container .Tools {
   margin-bottom: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .wow .skills-container i {
@@ -1095,14 +1116,67 @@ hr {
   margin-right: 2rem;
 }
 
-.skills_text {
-  display: block;
-  text-align: center;
-  margin: 0px;
-  margin-bottom: 8rem;
-  font-size: 4rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  width: 100%;
+@media (max-width: 75em) {
+  .wow .skills-container i {
+    font-size: 7rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
 }
+
+@media (max-width: 56.25em) {
+  .wow .skills-container i {
+    font-size: 6rem;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+/*
+        //+1800px
+        @include respond(big-desktop) {
+          height: 320px;
+          width: 640px;
+        }
+
+        //1200px
+        @include respond(tab-land) {
+          height: 320px - 32px;
+          width: 640px - 64px;
+        }
+
+        
+        //900px
+        @include respond(tab-port) {
+          height: 320px - 64px;
+          width: 640px - 128px;
+        }
+        
+
+        //768px
+        @include respond(tab-port-sm) {
+          height: 320px - 96px;
+          width: 640px - 192px;
+        }
+
+        //0 - 600px
+        @include respond(phone) {
+          border: 1px solid #d2d2d2;
+          box-shadow: none;
+          margin-bottom: 3.2rem;
+          height: 320px - 128px;
+          width: 640px - 256px;
+        }
+
+        @include respond(mid-phone) {
+          height: 320px - 160px;
+          width: 640px - 320px;
+        }
+        @include respond(phone-xs) {
+          height: 320px - 192px;
+          width: 640px - 384px;
+        }
+
+*/
 /*# sourceMappingURL=main.css.map */
