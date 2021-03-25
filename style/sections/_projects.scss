@@ -193,7 +193,7 @@
     align-items: center;
 
     @include respond(phone) {
-      
+      flex-wrap: wrap;
     }
   }
   
@@ -213,8 +213,11 @@
         margin-left: 1rem;
         margin-right: 1rem;
       }
-    }
+      @include respond(phone-xs) {
+        font-size: 4rem;
+      }
   }
+}
 }
 /*
         //+1800px

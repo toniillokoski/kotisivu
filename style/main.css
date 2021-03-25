@@ -406,7 +406,6 @@ section {
 
 .section-title {
   color: #fff;
-  padding: 5rem;
 }
 
 .contact-wrapper {
@@ -1110,6 +1109,13 @@ hr {
           align-items: center;
 }
 
+@media (max-width: 37.5em) {
+  .wow .skills-container .Front, .wow .skills-container .Back, .wow .skills-container .Tools {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .wow .skills-container i {
   font-size: 8rem;
   margin-left: 2rem;
@@ -1130,6 +1136,12 @@ hr {
     margin-bottom: 1.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+}
+
+@media (max-width: 22em) {
+  .wow .skills-container i {
+    font-size: 4rem;
   }
 }
 
