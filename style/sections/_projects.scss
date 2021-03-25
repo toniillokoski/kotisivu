@@ -10,7 +10,7 @@
   }
 
   .project-wrapper {
-    margin-bottom: 15rem;
+    margin-bottom: 1rem;
 
     @include respond(phone) {
       margin-bottom: 0rem;
@@ -162,4 +162,40 @@
   background-size: 35% 100%;
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+.wow {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  flex-direction: column; 
+
+  .skills-container {
+  width: 200rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .Front, .Back, .Tools {
+    margin-bottom: 7rem;
+  }
+  
+    i {
+      font-size: 8rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+  }
+}
+
+.skills_text {
+  display: block;
+  text-align: center;
+  margin: 0px;
+  margin-bottom: 8rem;
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 100%;
 }
