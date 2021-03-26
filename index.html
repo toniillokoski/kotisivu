@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="./style/main.css">
   </head>
 
-  <body>
+  <body onload="ClearForm()">
     <div id="top"></div>
 
     <!-- **** Hero Section **** -->
@@ -280,7 +280,7 @@
         Contact
       </h2>      
       <div class="contact-wrapper">
-        <form id="contact_form" class="form-horizontal" 
+        <form id="contact_form" name="MyForm" class="form-horizontal" 
         action="https://formspree.io/f/myybvnnw"
         method="POST"
         >
@@ -290,8 +290,11 @@
           <div class="form-group">
               <input type="email" class="form-control" id="email" placeholder="Email" name="_replyto" value="" required>
           </div>
+
+          <input type="hidden" name="_next" value="www.toniillokoski.com">
+
           <textarea class="form-control" rows="6" placeholder="Message" name="message" required></textarea>
-          <button class="btn btn-primary send-button cta-btn cta-btn--resume" id="btnsubmit" type="submit" onclick="submitForm()">
+          <button class="btn btn-primary send-button cta-btn cta-btn--resume" id="btnsubmit" type="submit">
             SEND  
           </button>
         </form>
@@ -363,15 +366,8 @@
     </footer>
     <!-- /END Footer Section -->
     <script>
-      function submitForm() {
-        // Get the first form with the name
-        // Usually the form name is not repeated
-        // but duplicate names are possible in HTML
-        // Therefore to work around the issue, enforce the correct index
-        var frm = document.getElementById('contact_form')[0];
-        frm.submit(); // Submit the form
-        frm.reset();  // Reset all form data
-        return false; // Prevent page refresh
+      function ClearForm(){
+        document.MyForm.reset();
       }
     </script>
 
