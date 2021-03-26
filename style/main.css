@@ -217,7 +217,7 @@ a:hover {
 }
 
 .footer {
-  background-color: #454545;
+  background-color: #555555;
   color: #fff;
   padding: 14px 16px;
 }
@@ -571,12 +571,18 @@ input:focus, textarea:focus {
   width: 100%;
   margin: 0 auto;
   padding: 0;
+  vertical-align: middle;
 }
 
 .social-media-list .teksti_icon {
-  font-family: sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   font-size: 2.5rem;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 5px;
 }
 
 .social-media-list li a {
@@ -586,6 +592,12 @@ input:focus, textarea:focus {
 .social-media-list li {
   position: relative;
   display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 60px;
   width: 60px;
   margin: 10px 3px;
@@ -597,6 +609,7 @@ input:focus, textarea:focus {
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   text-align: center;
+  vertical-align: middle;
 }
 
 .social-media-list li i {
@@ -806,7 +819,7 @@ hr {
 
 .topnav {
   overflow: hidden;
-  background-color: #454545;
+  background-color: #555555;
   position: absolute;
   top: 0;
   left: 0;
@@ -839,15 +852,9 @@ hr {
 .topnav a:hover {
   -webkit-transform: scale(1.2, 1.2);
           transform: scale(1.2, 1.2);
-  color: #02aab0;
+  color: #00cdac;
 }
 
-/*
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-*/
 #projects {
   background-color: #fff;
   color: #272341;
