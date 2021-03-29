@@ -803,6 +803,7 @@ hr {
 
 #hero .hero-cta a {
   font-size: 2.4rem;
+  margin-bottom: 7.2rem;
 }
 
 @media (max-width: 37.5em) {
@@ -856,20 +857,24 @@ hr {
 }
 
 :root {
-  --orchid: #F92672;
+  --orchid: #02aab0;
   --br-blue: #66D9EF;
-  --henn1nk: #A6E22E;
+  --henn1nk: #272341;
   --spice: #FD971F;
-  --classColour: #FFE792;
+  --classColour: #00cdac;
   --parColour: #F8F8F2;
 }
 
 .loader-container {
   width: 400px;
   height: 175px;
-  margin: auto;
-  margin-top: 30vh;
   overflow: hidden;
+}
+
+@media (max-width: 31em) {
+  .loader-container {
+    display: none;
+  }
 }
 
 .line {
@@ -899,33 +904,33 @@ hr {
 }
 
 .exp-40 {
-  -webkit-animation: expand-40 0.2s linear forwards;
-          animation: expand-40 0.2s linear forwards;
+  -webkit-animation: expand-40 0.3s linear forwards;
+          animation: expand-40 0.3s linear forwards;
 }
 
 .exp-70 {
-  -webkit-animation: expand-70 0.2s linear forwards;
-          animation: expand-70 0.2s linear forwards;
+  -webkit-animation: expand-70 0.3s linear forwards;
+          animation: expand-70 0.3s linear forwards;
 }
 
 .exp-90 {
-  -webkit-animation: expand-90 0.2s linear forwards;
-          animation: expand-90 0.2s linear forwards;
+  -webkit-animation: expand-90 0.3s linear forwards;
+          animation: expand-90 0.3s linear forwards;
 }
 
 .exp-110 {
-  -webkit-animation: expand-110 0.2s linear forwards;
-          animation: expand-110 0.2s linear forwards;
+  -webkit-animation: expand-110 0.3s linear forwards;
+          animation: expand-110 0.3s linear forwards;
 }
 
 .exp-200 {
-  -webkit-animation: expand-200 0.2s linear forwards;
-          animation: expand-200 0.2s linear forwards;
+  -webkit-animation: expand-200 0.3s linear forwards;
+          animation: expand-200 0.3s linear forwards;
 }
 
 .exp-300 {
-  -webkit-animation: expand-300 0.2s linear forwards;
-          animation: expand-300 0.2s linear forwards;
+  -webkit-animation: expand-300 0.3s linear forwards;
+          animation: expand-300 0.3s linear forwards;
 }
 
 .line1 .dash-1 {

@@ -59,6 +59,7 @@
 
     & a {
       font-size: 2.4rem;
+      margin-bottom: 7.2rem;
 
       @include respond(phone) {
         font-size: 2rem;
@@ -108,11 +109,11 @@
 
 
 :root {
-  --orchid: #F92672;
+  --orchid: #02aab0;
   --br-blue: #66D9EF;
-  --henn1nk: #A6E22E;
+  --henn1nk: #272341;
   --spice: #FD971F;
-  --classColour: #FFE792;
+  --classColour: #00cdac;
   --parColour: #F8F8F2;
 }
 
@@ -120,9 +121,10 @@
 .loader-container {
   width:400px;
   height:175px;
-  margin:auto;
-   margin-top:30vh;
   overflow:hidden;
+  @include respond(mid-phone) {
+    display: none;
+  }
 }
 
 .line {
@@ -152,27 +154,27 @@
 }
 
 .exp-40 {
-  animation: expand-40 0.2s linear forwards;
+  animation: expand-40 0.3s linear forwards;
 }
 
 .exp-70 {
-  animation: expand-70 0.2s linear forwards;
+  animation: expand-70 0.3s linear forwards;
 }
 
 .exp-90 {
-  animation: expand-90 0.2s linear forwards;
+  animation: expand-90 0.3s linear forwards;
 }
 
 .exp-110 {
-  animation: expand-110 0.2s linear forwards;
+  animation: expand-110 0.3s linear forwards;
 }
 
 .exp-200 {
-  animation: expand-200 0.2s linear forwards;
+  animation: expand-200 0.3s linear forwards;
 }
 
 .exp-300 {
-  animation: expand-300 0.2s linear forwards;
+  animation: expand-300 0.3s linear forwards;
 }
 
 .line1 .dash-1 {
