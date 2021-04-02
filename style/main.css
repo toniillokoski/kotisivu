@@ -820,7 +820,7 @@ hr {
 
 .topnav {
   overflow: hidden;
-  background-color: #555555;
+  background-color: #e1e1e1;
   position: absolute;
   top: 0;
   left: 0;
@@ -843,7 +843,7 @@ hr {
 
 .topnav a {
   float: left;
-  color: #fff;
+  color: #272341;
   text-align: left;
   padding: 14px 16px;
   text-decoration: none;
