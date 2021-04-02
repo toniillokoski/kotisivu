@@ -24,6 +24,33 @@
       }
     }
 
+    .small_project {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-bottom: 8rem;
+
+      @include respond(mid-phone) {
+        flex-direction: column;
+      }
+
+      h3 {
+        margin: 0;
+
+        @include respond(mid-phone) {
+          margin: 1em;
+        }
+      }
+
+      a {
+        @include respond(mid-phone) {
+          margin: 0.5em;
+        }
+      }
+    }
+
     &__text {
       text-align: left;
 
