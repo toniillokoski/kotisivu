@@ -173,16 +173,17 @@ input, textarea {
   margin: 0 auto;
   padding: 0;
   vertical-align: middle;
+  align-items: center;
 
   .teksti_icon {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     font-size: 2.5rem;
     text-align: center;
-    position: absolute;
+    /*position: absolute;*/
     width: 100%;
     height: 100%;
-    top: 5px;
+    /*top: 5px;*/
   }
 }
 
